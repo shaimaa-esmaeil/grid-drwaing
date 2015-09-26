@@ -1,0 +1,48 @@
+.square {
+	width:50px;
+	height: 50px;
+	background-color: grey;
+	border-radius: 5px;
+	display: inline-table;
+	margin-right: 1px;
+
+	/*display: inline;*/
+	}
+.square:hover {
+	background-color: black;
+}
+.wrapper {
+	width: 816px;
+	height: 816px;
+	margin-left: 100px;
+
+}
+
+.selected{
+	
+	background-color: black;
+	
+}
+
+
+
+button  {
+	position: absolute;
+    left: -3px;
+    top: -1px;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#new {
+	margin-left: 300px;
+}
+#erase {
+	margin-left: 400px;
+}
+
+
+p{
+	text-align: center;
+}
