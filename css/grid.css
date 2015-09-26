@@ -27,7 +27,7 @@
 
 
 button  {
-	position: absolute;
+	position: relative;
     left: -3px;
     top: -1px;
     display: inline-block;
@@ -35,12 +35,6 @@ button  {
     border-radius: 5px;
 }
 
-#new {
-	margin-left: 300px;
-}
-#erase {
-	margin-left: 400px;
-}
 
 
 p{
