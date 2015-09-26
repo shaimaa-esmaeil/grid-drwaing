@@ -1,6 +1,6 @@
 $(document).ready(function() 
 {
-//console.log($('p'));
+	
 	for (var i = 0; i<256; i++)
 		{	
 		$(".wrapper").append('<div class = "square"></div>');
@@ -21,15 +21,17 @@ $(document).ready(function()
 			for (var i = 0; i<=gridSize; i++)
 				{	
 				
-				$(".wrapper").append('<div class = "square">'+ i +'</div>');
+				$(".wrapper").append('<div class = "square"></div>');
 				console.log(gridSize);
 				}
-			mouseRespond();
+			mouseRespond();//functoin to define mouse hovering result on the squares
 
 			});
 		$('#erase').click(function()
 		{
 			$(".selected").removeClass("selected");
+			$(".square").css("background-color","grey");
+			console.log("click");
 		});
 		
 
@@ -40,14 +42,22 @@ $(document).ready(function()
 });
 
 
+    	
+
 var mouseRespond = function(){
 		$(".square").mouseenter(function()
 		{
+			var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
 			$(this).addClass("square");
+			
+			
 
 		});
 		$(".square").mouseleave(function()
 		{
+			var hue = 'rgb(' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ',' + (Math.floor((256-199)*Math.random()) + 200) + ')';
 			$(this).addClass("selected");
+			$(this).css("background-color",hue);
 
 		});};
+
